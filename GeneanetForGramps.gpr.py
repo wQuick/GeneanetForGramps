@@ -17,13 +17,15 @@
 #------------------------------------------------------------------------
 
 #print('Before registering Geneanet Plugin')
+from gramps.version import major_version
+
 register(TOOL,
     id    = 'Import Geneanet data for Gramps',
     name  = _("Import Geneanet data for Gramps"),
     #name_accell  = _("Geneanet for Gramps"),
     description =  _("Extension to import data from Geneanet into Gramps."),
     version = '0.99.91',
-    gramps_target_version = '5.2',
+    gramps_target_version = major_version,
     status = STABLE,
     fname = 'GeneanetForGramps.py',
     authors = ['Bruno Cornec'],
